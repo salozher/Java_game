@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="mainFormPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SergTicTacToe.MainFormController">
+   <children>
+      <Label fx:id="gameHeader" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="-2.0" prefHeight="74.0" prefWidth="588.0" text="Sergiy's Tic-Tac-Toe" textAlignment="CENTER" textFill="#5cc41b">
+         <font>
+            <Font name="MV Boli" size="48.0" />
+         </font>
+      </Label>
+      <Separator layoutX="2.0" layoutY="71.0" prefHeight="11.0" prefWidth="600.0" />
+      <Button fx:id="startGame3x3" layoutX="6.0" layoutY="200.0" mnemonicParsing="false" onAction="#startGame3x3" prefHeight="86.0" prefWidth="588.0" text="Start Tic-Tac-Toe 3x3">
+         <font>
+            <Font name="MV Boli" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="startGame5x5" layoutX="6.0" layoutY="295.0" mnemonicParsing="false" onAction="#startGame5x5" prefHeight="86.0" prefWidth="588.0" text="Start Tic-Tac-Toe 5x5">
+         <font>
+            <Font name="MV Boli" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="241.0" layoutY="387.0" mnemonicParsing="false" onAction="#exitTotal" prefHeight="40.0" prefWidth="115.0" text="Exit">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Button>
+      <TextField fx:id="player1Name" layoutX="8.0" layoutY="102.0" prefHeight="39.0" prefWidth="257.0" promptText="Player 1" text="Player 1" />
+      <TextField fx:id="player2Name" layoutX="7.0" layoutY="148.0" prefHeight="39.0" prefWidth="257.0" promptText="Player 2" text="Player 2" />
+      <Label graphicTextGap="0.0" layoutX="14.0" layoutY="77.0" prefHeight="22.0" prefWidth="105.0" text="Enter your name:" />
+      <Label alignment="CENTER_RIGHT" graphicTextGap="0.0" layoutX="285.0" layoutY="129.0" prefHeight="30.0" prefWidth="213.0" text="Select the player who is playing as" textAlignment="RIGHT" />
+      <ImageView fitHeight="84.0" fitWidth="89.0" layoutX="500.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@xx.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="player1rb" layoutX="324.0" layoutY="113.0" mnemonicParsing="false" onInputMethodTextChanged="#player1Selected" prefHeight="17.0" prefWidth="79.0" />
+      <RadioButton fx:id="player2rb" layoutX="324.0" layoutY="159.0" mnemonicParsing="false" onInputMethodTextChanged="#player2Selected" prefHeight="17.0" prefWidth="79.0" />
+   </children>
+   <effect>
+      <Blend opacity="0.0" />
+   </effect>
+</Pane>
